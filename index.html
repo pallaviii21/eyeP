@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EyeP — IP Validation & Geolocation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>EyeP 👁️</h1>
+    <p class="subtitle">Validate any IP address. No guesswork.</p>
+
+    <section class="input-section">
+      <input 
+        type="text" 
+        id="ipInput" 
+        placeholder="Enter IPv4 or IPv6 address"
+        autocomplete="off"
+      />
+      <button id="lookupBtn">Lookup</button>
+    </section>
+
+    <section id="message" class="message"></section>
+
+    <section id="result" class="result hidden"></section>
+  </main>
+
+  <script src="js/validator.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
