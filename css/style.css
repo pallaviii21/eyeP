@@ -59,3 +59,247 @@ button {
 .hidden {
   display: none;
 }
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.badge.vpn {
+  background: #f59e0b;
+  color: #000;
+}
+
+.badge.proxy {
+  background: #ef4444;
+}
+
+.badge.tor {
+  background: #7c3aed;
+}
+
+.badge.hosting {
+  background: #3b82f6;
+}
+
+.badge.residential {
+  background: #10b981;
+}
+
+.badge.unknown {
+  background: #6b7280;
+}
+
+.note {
+  margin-top: 16px;
+  padding: 12px;
+  background: #1e293b;
+  border-left: 4px solid #f59e0b;
+  font-size: 13px;
+  border-radius: 6px;
+  color: #e2e8f0;
+}
+
+.note ul {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+
+.card {
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.flag {
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.info-box {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.info-box h4 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #38bdf8;
+}
+
+.note {
+  margin-top: 16px;
+  padding: 12px;
+  background: #1e293b;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.note.success {
+  border-left-color: #10b981;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #111827, #020617);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.container {
+  width: 500px;
+  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.7);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+.container {
+  width: 90%;
+  max-width: 900px;   /* increase from 420/500 */
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.7);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 1000px;   /* increase size */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.app-title {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+}
+
+
+.logo {
+  width: 170px;
+  height: auto;
+}
+
+.app-title {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin: 0;
+  padding: 10px;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle at 20% 20%, #1e3a8a, transparent 40%),
+              radial-gradient(circle at 80% 80%, #7c3aed, transparent 40%),
+              linear-gradient(135deg, #0f172a, #020617);
+}
+/* Brand row inside container */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* align left */
+  gap: 0px;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+  margin:0px 0px 2px 0;
+  padding-right: 0px;
+}
+
+/* Title */
+.app-title {
+  font-size: 60px;
+  font-weight: 600;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  letter-spacing: 2px;
+  padding-bottom: 19px;
+  color: #81b9f1;
+}
+.container {
+  margin-top: 0px;
+}
